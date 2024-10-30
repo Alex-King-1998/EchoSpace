@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with EchoSpace
+
+EchoSpace is a social media app created using React and Firebase.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
