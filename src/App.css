@@ -1,5 +1,21 @@
+/* src/App.css */
+
+html, body {
+  margin: 0; /* Remove default margin */
+  height: 100%; /* Ensure the body takes up full height */
+  background-color: rgb(68, 44, 206); /* Set the desired background color here */
+}
+
 .App {
-  text-align: center;
+  max-width: 600px; /* Maximum width for your app */
+  margin: 0 auto; /* Center the app horizontally */
+  padding: 20px; /* Padding inside the app */
+  text-align: center; /* Center text */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  display: flex; /* Use flexbox for layout control */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center items horizontally */
+  background-color: transparent; /* Keep app background transparent */
 }
 
 .App-logo {
@@ -9,13 +25,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #282c34; /* You can change this if you want */
+  min-height: 100vh; /* Minimum height to cover full viewport */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +44,105 @@
   color: #61dafb;
 }
 
+nav {
+  margin-bottom: 20px; /* Add space below the navigation */
+  width: 100%; /* Full width for the navigation */
+  display: flex; /* Use flexbox for navigation items */
+  justify-content: space-between; /* Space out items */
+  align-items: flex-start; /* Align items to the top */
+}
+
+nav .welcome-message {
+  margin-left: 0; /* No left margin needed */
+  color: white; /* Change color as desired */
+  font-weight: bold; /* Make the text bold */
+}
+
+nav .logout-button {
+  margin-right: 0; /* No right margin needed */
+  background-color: transparent; /* Make button background transparent */
+  border: none; /* Remove button border */
+  color: white; /* Change color as desired */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+nav a {
+  color: #61dafb; /* Change the link color here */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 15px; /* Space links further apart */
+  font-weight: bold; /* Optional: Make links bold */
+}
+
+nav a:hover {
+  color: #21a1f1; /* Change color on hover for better visibility */
+}
+
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: orange;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post button {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.post-feed {
+  margin-top: 20px;
+  width: 100%; /* Make sure it fills the width of the App */
+  max-width: 600px; /* Limit maximum width for consistency */
+}
+
+/* Change the color to orange for the signup link */
+.signup-link {
+  color: rgb(255, 165, 0); /* Change the color to orange */
+  text-decoration: none; /* Remove underline */
+}
+
+.signup-link:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+/* src/App.css */
+
+/* Add this to style the post metadata */
+.post-meta {
+  display: flex;
+  justify-content: space-between; /* Space out the posted on label and buttons */
+  align-items: center; /* Center the items vertically */
+  margin-top: 10px; /* Space above the post metadata */
+}
+
+.posted-on {
+  font-size: 0.8em; /* Smaller font size for the date/time */
+  color: #ccc; /* Light color for the date/time */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+

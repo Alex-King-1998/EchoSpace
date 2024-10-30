@@ -1,0 +1,49 @@
+/* src/components/Post.css */
+.post {
+    background-color: #FFA500; /* Orange color */
+    padding: 20px; /* Increase padding for the post section */
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px; /* Slightly larger avatar */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comments-section {
+    margin-top: 15px; /* Increased margin */
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em; /* Slightly smaller font size for comments */
+}
+
+.comments-section h4 {
+    margin: 10px 0; /* Add some margin above the comments title */
+}
+
+.comment {
+    margin: 5px 0; /* Space between comments */
+    padding: 5px; /* Padding for individual comments */
+    border-bottom: 1px solid #eee; /* Light border for separation */
+}
+
+.add-comment {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.add-comment input {
+    flex: 1; /* Allow input to take remaining space */
+    padding: 5px; /* Padding for input field */
+}
